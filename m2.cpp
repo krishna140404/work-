@@ -71,6 +71,7 @@ int main()
 		j++;
 	}
 }
+
 int PowerCalculation(int base, int expo)
 {
 	int i = 0, total = 1;
@@ -81,13 +82,13 @@ int PowerCalculation(int base, int expo)
 	}
 	return total;
 }
+
 int NumberRangeChecker(int low, int tValue, int high)
 {
 
 	if (low <= tValue && tValue <= high)
 	{
 		return 1;
-
 	}
 	else
 	{
