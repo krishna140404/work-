@@ -1,4 +1,10 @@
-
+/*
+* FILE : m1.cpp
+* PROJECT : Major Assignment 1
+* PROGRAMMER : krishna kachhiapatel
+* FIRST VERSION : 2024-02-02
+* DESCRIPTION : Write a program that displays characters and their averaged values.
+*/
 #include <stdio.h>
 int GetNum();
 int PowerCalculation(int, int);
@@ -71,7 +77,13 @@ int main()
 		j++;
 	}
 }
-
+/* FUNCTION: PowerCalCulation
+* DESCRIPTION : in this function the loop is used in order to raise base into the power .
+*              in simple words , This function represent the total calculation of power .
+* PARAMETERS : base , expo : in order to enter the values
+*
+* RETURN : TOTAL : this varieable describes the final calulation.
+*/
 int PowerCalculation(int base, int expo)
 {
 	int i = 0, total = 1;
@@ -82,7 +94,18 @@ int PowerCalculation(int base, int expo)
 	}
 	return total;
 }
-
+/* FUNCTION: NumberRangeChecker
+* DESCRIPTION  : this function is used for checking the range of base and expo .
+*               which make sure that the base is not greater than 30 or less than 1
+				as awell as exponent is greater than 6 or less than 1
+*
+* PARAMETERS :low : this is  to check the  lowest value of base and exponent
+*             high : it is for verifying the highest value of base and exponent
+*            tvalue : it is the value of base or exponent which is entered by user.
+*
+* RETURN : 1: is the value of inside the range.
+*          0: is the value is not in range. 
+*/
 int NumberRangeChecker(int low, int tValue, int high)
 {
 
