@@ -5,7 +5,8 @@
 * FIRST VERSION : 2024-02-02
 * DESCRIPTION : Write a program that displays characters and their averaged values.
 */
-#include <stdio.h>
+#include<stdio.h>
+#include<stdbool.h>
 int GetNum();
 int PowerCalculation(int, int);
 int NumberRangeChecker(int, int, int);
@@ -108,15 +109,17 @@ int PowerCalculation(int base, int expo)
 */
 int NumberRangeChecker(int low, int tValue, int high)
 {
-
+	bool verifiedValue = 0;
 	if (low <= tValue && tValue <= high)
+		
 	{
-		return 1;
+		verifiedValue = 1;
 	}
 	else
 	{
-		return 0;
+		verifiedValue = 0;
 	}
+	return verifiedValue;
 }
 
 #pragma warning(disable: 4996)
